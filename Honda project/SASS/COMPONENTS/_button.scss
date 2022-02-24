@@ -1,0 +1,56 @@
+.btn-blue {
+  background-color: $color-blue;
+  border-radius: 30px;
+  padding: 5px 20px;
+  @include styleText($color-black,$fs-1,$fw-2);
+
+  &:hover {
+    background-color: $color-dark-blue;
+  }
+}
+.btn-white {
+  background-color: $color-light-blue;
+  border-radius: 30px;
+  padding: 5px 20px;
+  @include styleText($color-black,$fs-1,$fw-2);
+
+
+  &:hover {
+    background-color: $color-green;
+  }
+}
+.btn-red {
+  background-color: $color-red;
+  border-radius: 30px;
+  padding: 5px 20px;
+  @include styleText($color-black,$fs-1,$fw-2);
+
+
+  &:hover {
+    background-color: rgb(206, 27, 66);
+  }
+}
+.btn-blur {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid $color-blue;
+  padding: 5px 20px;
+  @include styleText($color-black,$fs-1,$fw-2);
+
+
+  &:hover {
+    background-color: $color-green;
+  }
+}
+.btn-black {
+  background-color: black;
+  border-radius: 30px;
+  border: 2px solid red;
+  padding: 5px 20px;
+  @include styleText($color-black,$fs-1,$fw-2);
+
+
+  &:hover {
+    background-color: $color-green;
+  }
+}

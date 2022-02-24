@@ -1,0 +1,83 @@
+.myheader {
+	.navbar{
+		padding: 0;
+	}
+  background-color: $color-blue;
+  .header_btn{
+    
+    &.active{
+      background-color: $color-light;
+    }
+  } 
+  a {
+    @include styleText($color-white, $fs-1, $fw-2);
+    padding: 30px 15px;
+	margin: 0;
+	text-decoration: none;
+    &:hover {
+      background-color: $color-light;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+	  cursor: pointer;
+    }
+   
+  }
+  .navbar-brand {
+    img {
+      height: 17px;
+      object-fit: cover;
+    }
+  }
+  //   .navbar-light .navbar-nav .nav-link {
+  //     @include styleText($color-white, $fs-1, $fw-2);
+  //   }
+  .myheader_item1 {
+    position: relative;
+    &::after {
+      position: absolute;
+      display: none;
+      content: "";
+      background: $color-light;
+      width: 100%;
+      height: 40px;
+      top: 50px;
+      left: 0;
+    }
+  }
+  .myheader__right {
+    margin-left: auto;
+    li {
+      text-decoration: none;
+      list-style-type: none;
+    }
+    .navbar-nav {
+      .nav-link {
+        @include styleText($color-white, $fs-1, $fw-2);
+      }
+    }
+    a {
+    }
+    .nav-item {
+      padding: 0 10px;
+      &:last-child {
+        padding-right: 30px;
+      }
+    }
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 30px;
+    }
+    .language {
+      border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+      border-left: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
+
+//------------------RESPONSIVE----------------
+
+
+

@@ -1,0 +1,94 @@
+footer{
+background-color: $color-blue-light;
+    .myFooter {
+      padding: 30px 0;
+      width: 95%;
+      margin: auto;
+      text-align: center;
+      .line {
+        border: solid 2px gray;
+      }
+      img {
+        width: 120px;
+        padding: 20px;
+      }
+      .contact {
+        padding: 30px 0;
+        border-bottom: 1px solid gray;
+        border-top: 1px solid gray;
+        .contact-icon {
+          i {
+            font-size: 2.5rem;
+            padding: 5px;
+          }
+        }
+        .contact-search {
+          .search {
+            display: flex;
+            overflow: hidden;
+            // border-radius: 20px;
+            // background-color: rgb(20, 19, 19);
+            span {
+              position: absolute;
+              i {
+                font-size: 1.4rem;
+              }
+              padding: 10px;
+              &:hover {
+                // background-color: $color-red;
+                cursor: pointer;
+              }
+            }
+            input {
+              overflow: hidden;
+              position: relative;
+              background-color: rgb(20, 19, 19);
+              border-radius: 30px;
+              padding: 10px 30px;
+              flex: 1;
+              outline: none;
+              border: none;
+              &:hover {
+                border: $color-blue solid 2px;
+    
+                span {
+                  border: $color-blue solid 2px;
+                }
+                color: white;
+              }
+              &::placeholder {
+                font-size: $fs-1;
+              }
+            }
+          }
+        }
+        .contact-right {
+          p {
+            @include styleText($color-white, $fs-1, $fw-1);
+          }
+        }
+      }
+      .mycategory {
+          padding: 30px 0;
+        .item-list {
+            text-align: left;
+          h1 {
+            @include styleText($color-blue-light, $fs-2, $fw-2);
+            padding: 10px 0;
+          }
+          ul{
+            padding: 0;
+              li {
+                list-style-type: none;
+                a{
+                text-decoration: none;
+                    font-size: $fs-1;
+                    color: $color-blue-light;
+                }
+              }
+          }
+        }
+      }
+    
+    }
+}

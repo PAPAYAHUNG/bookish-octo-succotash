@@ -1,0 +1,54 @@
+.support{
+    padding: 30px 0;
+    .mysupport{
+        .sp-item{
+            background-color: $color-black;
+            padding: 30px 0;
+            border-radius: 7px;
+            h1{
+                margin: 15px 0;
+            }
+            i{
+                font-size: $fs-4;
+            }
+            &:hover{
+                transform: translateX(2px);
+                cursor: pointer;
+                box-shadow: 2px 3px 4px rgba(83, 40, 40, 0.986);
+                button{
+                    background-color: $color-dark-blue;
+                }
+            }
+        }
+    }
+
+}
+//------------------RESPONSIVE----------------
+// 
+@media screen and (max-width:992px) {
+    .support{
+        .mysupport{
+            .sp-item{
+                background-color: $color-black;
+                padding: 30px 0;
+                border-radius: 7px;
+                h1{
+                    margin: 15px 0;
+                    font-size: 1.5rem;
+                }
+                i{
+                    font-size: $fs-4;
+                }
+                &:hover{
+                    transform: translateX(2px);
+                    cursor: pointer;
+                    box-shadow: 2px 3px 4px rgba(83, 40, 40, 0.986);
+                    button{
+                        background-color: $color-dark-blue;
+                    }
+                }
+            }
+        }
+    
+    }
+}

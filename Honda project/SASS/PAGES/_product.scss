@@ -1,0 +1,59 @@
+.product {
+  background-color: aliceblue;
+  .my_product {
+    width: 80%;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+    .left {
+    }
+
+    .right {
+    }
+    .product-content {
+      position: relative;
+      top: -30px;
+      .text {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+//---------------------------RESPONSIVE--------------------
+@media screen and (max-width:1200px) {
+    .product {
+      .my_product {
+        width: 95%;
+        
+      }
+    }
+
+}
+@media screen and (max-width:960px) {
+    .product {
+      background-color: aliceblue;
+      .my_product {
+        width: 95%;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+        .product-content {
+          position: relative;
+          top: -30px;
+          h1{
+          font-size: $fs-3;
+
+          }
+          .text {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+}
+
+//------------------RESPONSIVE----------------

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: $font-size-html;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: $color-white;
+    background-color: $color-dark-blue;
+    line-height: $line-height;
+}

@@ -1,0 +1,124 @@
+.ourVehicle {
+  .myOurVehicle {
+    h1 {
+      @include styleText($color-black, $fs-4, $fw-1);
+    }
+    .nav-tabs {
+      .nav-link {
+        @include styleText($color-white, $fs-2, $fw-2);
+        padding: 10px 20px;
+      }
+      .nav-link.active {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          display: block;
+          top: 100%;
+          z-index: 5000;
+          border: 20px solid;
+          border-color: $color-white transparent transparent transparent;
+        }
+      }
+    }
+
+    .tabCar {
+      text-align: center;
+      position: relative;
+      .tabCar-tag {
+        position: absolute;
+        background-color: #668512;
+        padding: 11px 103px;
+        top: 21px;
+        left: -82px;
+        transform: rotate(-43deg);
+      }
+
+      .tabcar-Content {
+        position: absolute;
+        top: 0px;
+        left: 80px;
+        padding: 20px;
+
+        .position {
+          text-align: left;
+        }
+        width: 300px;
+        text-align: center;
+        p {
+          font-size: $fs-1;
+        }
+        .line-zone {
+          hr {
+            border: 2px solid rgb(228, 225, 230);
+            opacity: 0.9;
+          }
+          .year {
+            border-color: $color-dark-blue;
+            position: relative;
+            top: -28px;
+            font-size: 2rem;
+          }
+        }
+        .product-info {
+          justify-content: space-between;
+          .price {
+            font-size: $fs-3;
+          }
+          .info {
+            font-size: $fs-3;
+          }
+        }
+      }
+    }
+  }
+}
+//------------------RESPONSIVE----------------
+@media screen and (max-width: 992px) {
+  .ourVehicle {
+    .myOurVehicle {
+      .tabCar {
+        text-align: center;
+        position: relative;
+        
+        .tabcar-Content {
+          position: absolute;
+          top: 381px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 20px;
+
+          .position {
+            text-align: left;
+          }
+          width: 300px;
+          text-align: center;
+          p {
+            font-size: $fs-1;
+          }
+          .line-zone {
+            hr {
+              border: 2px solid rgb(228, 225, 230);
+              opacity: 0.9;
+            }
+            .year {
+              border-color: $color-dark-blue;
+              position: relative;
+              top: -28px;
+              font-size: 2rem;
+            }
+          }
+          .product-info {
+            justify-content: space-between;
+            .price {
+              font-size: $fs-3;
+            }
+            .info {
+              font-size: $fs-3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

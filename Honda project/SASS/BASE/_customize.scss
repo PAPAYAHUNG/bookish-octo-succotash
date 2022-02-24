@@ -1,0 +1,34 @@
+//Customized button of own carousel
+.owl-carousel {
+  .owl-stage-outer {
+    position: relative;
+  }
+  .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 92px;
+    width: 100%;
+    .owl-prev {
+      // position: absolute;
+
+      span {
+        font-size: 10rem;
+        padding: 0px 5px;
+        background-color: $color-dark-blue;
+        border-radius: 6px;
+      }
+    }
+    .owl-next {
+      span {
+        font-size: 10rem;
+        padding: 0px 5px;
+        background-color: $color-dark-blue;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+//5 collumn boostrap.

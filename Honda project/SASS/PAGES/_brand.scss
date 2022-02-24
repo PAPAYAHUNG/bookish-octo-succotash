@@ -1,0 +1,38 @@
+.brand {
+  background-color: $color-blue-base;
+  padding: 30px 0;
+  .copyRight {
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    .left {
+      width: 700px;
+      p {
+        @include styleText($color-white, $fs-1, $fw-1);
+      }
+    }
+    .right {
+      width: 400px;
+      flex-wrap: wrap;
+      span {
+        @include styleText($color-white, $fs-1, $fw-1);
+        padding: 0 5px;
+        border-right: solid $color-light-blue 1px;
+        line-height: 1.9;
+        &:last-child{
+        border-right: none;
+
+        }
+      }
+    }
+  }
+  .mybrand {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    
+}
+.last{
+    padding: 10px 40px ;
+}
+}

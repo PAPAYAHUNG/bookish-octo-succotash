@@ -1,0 +1,35 @@
+.card{
+    width: 95%;
+    margin: 0 auto;
+    img{
+        height: 270px;
+        object-fit: fill;
+        &:nth-child(2){
+            display: none;
+        }
+    }
+    &:hover{
+        img{
+            &:nth-child(2){
+                display: block;
+            }
+            &:nth-child(1){
+                display: none;
+            }
+        }
+    }
+    border-radius: 5px;
+    &:hover{
+        box-shadow: 1px 1px 4px rgba(180, 20, 20, 0.746);
+    
+    }
+    .card-body{
+        .card-title{
+            @include styleText($color-black,$fs-2,$fw-2)
+        }
+        .card-main{
+            padding: 10px 15px;
+        }
+    }
+    
+}

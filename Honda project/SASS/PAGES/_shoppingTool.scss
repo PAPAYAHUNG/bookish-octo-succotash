@@ -1,0 +1,6 @@
+.shopping{
+    display: none;
+    &.is_shown{
+        display: block;
+    }
+}

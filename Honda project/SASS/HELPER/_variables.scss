@@ -1,0 +1,57 @@
+//Color
+$color-white: white;
+$color-blue: rgb(32, 105, 189);
+$color-dark-blue: rgba(64, 68, 119, 0.705);
+$color-red: rgb(87, 5, 12);
+$color-green: rgb(102, 133, 18);
+$color-black: black;
+$color-light-blue: rgb(30, 65, 82);
+$color-light-pink: #6746c3;
+$color-light: #f8f8ff;
+$color-blue-light: #00446b;
+$color-blue-base: #007cc0;
+
+
+
+
+
+
+
+
+//Font weight
+$fw-0:normal;
+$fw-1:300;
+$fw-2:600;
+
+
+//Line height
+$line-height:1.4;
+
+
+//Font-size
+$font-size-html: 62.5%;
+$fs-1: 1.4rem;
+$fs-2: 1.6rem;
+$fs-3: 1.8rem;
+$fs-4: 6rem;
+//Padding
+$pd0:10px;
+$pd1:20px;
+$pd2:25px;
+$pd3:30px;
+$pd4:50px;
+
+
+//Margin
+$mg0:10px;
+$mg1:20px;
+$mg2:25px;
+$mg3:30px;
+$mg4:50px;
+//Break point
+$breakpoints: (
+  "small": 576px,
+  "medium": 768px,
+  "large": 992px,
+  "extra-large": 1200px,
+);

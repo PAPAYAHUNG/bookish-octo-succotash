@@ -1,0 +1,52 @@
+.carousel-control-prev {
+  justify-content: start;
+  position: absolute;
+  left: 34px;
+  .carousel-control-prev-icon {
+    width: 6rem;
+    height: 10rem;
+    background-color: gray;
+    border-radius: 8px;
+  }
+}
+.carousel-control-next {
+  justify-content: end;
+  position: absolute;
+  right: 34px;
+  .carousel-control-next-icon {
+    width: 6rem;
+    height: 10rem;
+    background-color: gray;
+    border-radius: 8px;
+  }
+}
+
+//------------------RESPONSIVE----------------
+@media screen and (max-width: 960px) {
+
+  .carousel-control-prev {
+      justify-content: start;
+      position: absolute;
+      left: 15px;
+      .carousel-control-prev-icon {
+        width: 4rem;
+        height: 6rem;
+        background-color: gray;
+        border-radius: 8px;
+      }
+    }
+    .carousel-control-next {
+      justify-content: end;
+      position: absolute;
+      right: 15px;
+      .carousel-control-next-icon {
+        width: 4rem;
+        height: 6rem;
+        background-color: gray;
+        border-radius: 8px;
+      }
+    
+
+} 
+ 
+}

@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- bootstrap css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- link icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<!-- Link font google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<!-- Link animate.css cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- Link own carousel css -->
+	<link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+	<link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
+	<!-- Main css -->
+	<link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<div class="myheader animate__animated animate__rubberBand">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="#">
+					<!-- HONDA -->
+					<img src="./IMG/honda-logo-11540236617dtkc4wercc.png" alt="" srcset="">
+				</a>
+				<a class="myheader_item1 header_btn " data-id="header_btn1">
+					VEHICLES
+					<i class="fa fa-angle-down"></i>
+				</a>
+				<a class="myheader_item header_btn" data-id="header_btn2">
+					SHOPPING TOOLS
+					<i class="fa fa-angle-down"></i>
+				</a>
+
+				<div class=" myheader__right d-flex align-items-center">
+					<a class="nav-link d-flex" href="#">
+						<span><i class="fa fa-map-marker-alt"></i> </span>
+						<span class="d-none d-lg-block">Dealers</span>
+					</a>
+					<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+						<ul class=" navbar-nav ">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Owners
+									<i class="fa fa-angle-down"></i>
+								</a>
+
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									Discover
+									<i class="fa fa-angle-down"></i>
+								</a>
+
+							</li>
+							<li class="nav-item dropdown language">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									English
+									<i class="fa fa-angle-down"></i>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link">
+									<i class="fa fa-search"></i>
+								</a>
+							</li>
+						</ul>
+						<!-- <form class="d-flex">
+								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-outline-success" type="submit">Search</button>
+							</form> -->
+					</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+				</div>
+
+
+			</nav>
+		</div>
+	</header>
+	<!-- VEHICLES -->
+	<section class="vehicle pane-header" data-index="header_btn1">
+		<div class="container-fluid my-vehicle">
+			<nav>
+				<div class="nav nav-tabs justify-content-center container" id="nav-tab" role="tablist">
+					<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+						type="button" role="tab" aria-controls="nav-car" aria-selected="true">CARS</button>
+					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">CROSSOVER &
+						SUVS</button>
+					<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">MINIVAN &
+						TRUCKS</button>
+					<button class="nav-link" id="nav-enviroment-tab" data-bs-toggle="tab"
+						data-bs-target="#nav-enviroment" type="button" role="tab" aria-controls="nav-enviroment"
+						aria-selected="false">ENVIROMENT</button>
+					<button class="nav-link" id="nav-contact1-tab" data-bs-toggle="tab" data-bs-target="#nav-future"
+						type="button" role="tab" aria-controls="nav-future" aria-selected="false">FUTURE</button>
+				</div>
+			</nav>
+
+			<div class="tab-content tab-content__config" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+					<div class="car-tab mt-3">
+
+						<div class="row">
+							<div class="row title">
+								<div class="col-12">
+									<hr size="2" class="line">
+									<div class="script text-center">
+										<h1 class="d-inline">
+											CARS
+											<i class="fa fa-circle"></i>
+											<span>SEDAN</span>
+										</h1>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6 mt-5 text-center">
+								<div class="card">
+									<img src="./IMG/sale/1.jpg" alt="hinh1">
+									<img src="./IMG/sale/1.1.jpg" alt="hinh1">
+									<div class="card-body">
+										<h5 class="card-title text-center">Acord Sedan</h5>
+										<div class="row card-main">
+											<div class="col-6 text-start">
+												<p>$23.570</p>
+												<p>Starting</p>
+												<p>MSRP</p>
+											</div>
+											<div class="col-6 text-end">
+												<p>38/30</p>
+												<p>Hwy/City</p>
+												<p>MPG Rating</p>
+											</div>
+										</div>
+										<div class="button-zone d-flex justify-content-around">
+
+											<button class="btn btn-blue">EXPLORE</button>
+											<button class="btn btn-white">BUILD</button>
+										</div>
+										<div class="tag">
+											<h5>1 OFFER</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6 mt-5 text-center">
+								<div class="card">
+									<img src="./IMG/sale/2.jpg" alt="hinh1">
+									<img src="./IMG/sale/2.2.jpg" alt="hinh1">
+									<div class="card-body">
+										<h5 class="card-title text-center">Acord Sedan</h5>
+										<div class="row card-main">
+											<div class="col-6 text-start">
+												<p>$23.570</p>
+												<p>Starting</p>
+												<p>MSRP</p>
+											</div>
+											<div class="col-6 text-end">
+												<p>38/30</p>
+												<p>Hwy/City</p>
+												<p>MPG Rating</p>
+											</div>
+										</div>
+										<div class="button-zone d-flex justify-content-around">
+
+											<button class="btn btn-blue">EXPLORE</button>
+											<button class="btn btn-white">BUILD</button>
+										</div>
+										<div class="tag">
+											<h5>1 OFFER</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6 mt-5 text-center">
+								<div class="card">
+									<img src="./IMG/sale/3.jpg" alt="hinh1">
+									<img src="./IMG/sale/3.3.jpg" alt="hinh1">
+									<div class="card-body">
+										<h5 class="card-title text-center">Acord Sedan</h5>
+										<div class="row card-main">
+											<div class="col-6 text-start">
+												<p>$23.570</p>
+												<p>Starting</p>
+												<p>MSRP</p>
+											</div>
+											<div class="col-6 text-end">
+												<p>38/30</p>
+												<p>Hwy/City</p>
+												<p>MPG Rating</p>
+											</div>
+										</div>
+										<div class="button-zone d-flex justify-content-around">
+
+											<button class="btn btn-blue">EXPLORE</button>
+											<button class="btn btn-white">BUILD</button>
+										</div>
+										<div class="tag">
+											<h5>1 OFFER</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6 mt-5 text-center">
+								<div class="card">
+									<img src="./IMG/sale/4.jpg" alt="hinh1">
+									<img src="./IMG/sale/4.4.jpg" alt="hinh1">
+									<div class="card-body">
+										<h5 class="card-title text-center">Acord Sedan</h5>
+										<div class="row card-main">
+											<div class="col-6 text-start">
+												<p>$23.570</p>
+												<p>Starting</p>
+												<p>MSRP</p>
+											</div>
+											<div class="col-6 text-end">
+												<p>38/30</p>
+												<p>Hwy/City</p>
+												<p>MPG Rating</p>
+											</div>
+										</div>
+										<div class="button-zone d-flex justify-content-around">
+
+											<button class="btn btn-blue">EXPLORE</button>
+											<button class="btn btn-white">BUILD</button>
+										</div>
+										<div class="tag">
+											<h5>1 OFFER</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6 mt-5 text-center">
+								<div class="card">
+									<img src="./IMG/sale/5.jpg" alt="hinh1">
+									<img src="./IMG/sale/5.5.jpg" alt="hinh1">
+									<div class="card-body">
+										<h5 class="card-title text-center">Acord Sedan</h5>
+										<div class="row card-main">
+											<div class="col-6 text-start">
+												<p>$23.570</p>
+												<p>Starting</p>
+												<p>MSRP</p>
+											</div>
+											<div class="col-6 text-end">
+												<p>38/30</p>
+												<p>Hwy/City</p>
+												<p>MPG Rating</p>
+											</div>
+										</div>
+										<div class="button-zone d-flex justify-content-around">
+
+											<button class="btn btn-blue">EXPLORE</button>
+											<button class="btn btn-white">BUILD</button>
+										</div>
+										<div class="tag">
+											<h5>1 OFFER</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6 mt-5 text-center">
+								<div class="card">
+									<img src="./IMG/sale/6.jpg" alt="hinh1">
+									<img src="./IMG/sale/6.6.jpg" alt="hinh1">
+									<div class="card-body">
+										<h5 class="card-title text-center">Acord Sedan</h5>
+										<div class="row card-main">
+											<div class="col-6 text-start">
+												<p>$23.570</p>
+												<p>Starting</p>
+												<p>MSRP</p>
+											</div>
+											<div class="col-6 text-end">
+												<p>38/30</p>
+												<p>Hwy/City</p>
+												<p>MPG Rating</p>
+											</div>
+										</div>
+										<div class="button-zone d-flex justify-content-around">
+
+											<button class="btn btn-blue">EXPLORE</button>
+											<button class="btn btn-white">BUILD</button>
+										</div>
+										<div class="tag">
+											<h5>1 OFFER</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">.2</div>
+				<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+				<div class="tab-pane fade" id="nav-enviroment" role="tabpanel" aria-labelledby="nav-enviroment-tab">4
+				</div>
+				<div class="tab-pane fade" id="nav-future" role="tabpanel" aria-labelledby="nav-contact1-tab">Future
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- SHOPPING TOOLS -->
+	<section class="shopping pane-header" data-index="header_btn2">hfjsdkf</section>
+	<!-- Carousel -->
+	<section class="mycarousel">
+
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+					aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+					aria-label="Slide 5"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+					aria-label="Slide 6"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+					aria-label="Slide 7"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="img-fluid d-none d-sm-block" src="./IMG/img/slider-3.jpg" alt="hinh 1">
+					<img class="img-fluid d-block d-sm-none" src="./IMG/img/slider-3-xs.jpg" alt="hinh 1">
+					<div class="carousel-caption mb-3">
+						<h5>Third slide label</h5>
+						<p class="">Some representative placeholder content for the third slide.</p>
+						<button class="btn btn-red">SEE OFFERS</button>
+
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="img-fluid d-none d-sm-block" src="./IMG/img/slider-1.jpg" alt="hinh 2">
+					<img class="img-fluid d-block d-sm-none" src="./IMG/img/slider-1-xs.jpg" alt="hinh 2">
+					<div class="carousel-caption mb-3">
+						<h5>Third slide label</h5>
+						<p class="">Some representative placeholder content for the third slide.</p>
+						<button class="btn btn-red">SEE OFFERS</button>
+
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="img-fluid d-none d-sm-block" src="./IMG/img/slider-2.jpg" alt="hinh 3">
+					<img class="img-fluid d-block d-sm-none" src="./IMG/img/slider-2-xs.jpg" alt="hinh 3">
+					<div class="carousel-caption mb-3">
+						<h5>Third slide label</h5>
+						<p class="">Some representative placeholder content for the third slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="img-fluid d-none d-sm-block" src="./IMG/img/slider-4.jpg" alt="hinh 4">
+					<img class="img-fluid d-block d-sm-none" src="./IMG/img/slider-4-xs.jpg" alt="hinh 4">
+					<div class="carousel-caption mb-3">
+						<h5>Third slide label</h5>
+						<p class="">Some representative placeholder content for the third slide.</p>
+						<button class="btn btn-red">SEE OFFERS</button>
+
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="img-fluid d-none d-sm-block" src="./IMG/img/slider-5.jpg" alt="hinh 4">
+					<img class="img-fluid d-block d-sm-none" src="./IMG/img/slider-5-xs.jpg" alt="hinh 4">
+					<div class="carousel-caption mb-3">
+						<h5>Third slide label</h5>
+						<p class="">Some representative placeholder content for the third slide.</p>
+						<button class="btn btn-red">SEE OFFERS</button>
+
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="img-fluid d-none d-sm-block" src="./IMG/img/slider-6.jpg" alt="hinh 4">
+					<img class="img-fluid d-block d-sm-none" src="./IMG/img/banner-2-xs.jpg" alt="hinh 4">
+					<div class="carousel-caption mb-3">
+						<h5>Third slide label</h5>
+						<p class="">Some representative placeholder content for the third slide.</p>
+						<button class="btn btn-red">SEE OFFERS</button>
+
+					</div>
+				</div>
+			
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+	<!-- Continue -->
+	<section class="continue">
+		<div class="myContinue row">
+			<div class="myContinue_left col-sm-12 col-xl-6 col-md-12 col-lg-6 animate__animated animate__backInUp">
+				<div>
+					<h1>Continue Shopping</h1>
+					<p>Pick up you where you left off.</p>
+				</div>
+			</div>
+			<div class="myContinue_right col-sm-12 col-xl-6 col-md-12 col-lg-6 animate__animated animate__backInUp">
+				<div class="row">
+					<div class=" col-md-12 col-sm-12 left ">
+						<img src="./IMG/img/xe-3.png" alt="">
+					</div>
+					<div class=" col-md-12  col-sm-12 right text-center">
+						<h2>2022 Pilot</h2>
+						<p>$37,580 Starting MSRP</p>
+						<div class="d-flex justify-content-around">
+							<button class="btn btn-blur">EXPLORE</button>
+							<button class="btn btn-blur">BUILD</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Product -->
+	<section class="product">
+		<div class="my_product">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 text-center left">
+					<img src="./IMG/img/xe-1.png" alt="">
+					<div class="product-content">
+						<h1>Get ready for a whole new look</h1>
+						<button class="btn btn-blue text">Register</button>
+					</div>
+				</div>
+
+
+				<div class="col-lg-6 col-md-12 text-center right">
+					<img src="./IMG/img/xe-4-hover.png" alt="">
+					<div class="product-content text-center">
+						<h1>The next generation type R is on its way</h1>
+						<button class="btn btn-blue text">Sign up for more</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- Our vehicle -->
+	<section class="ourVehicle">
+		<div class="myOurVehicle text-center">
+			<h1>Our Vehicles</h1>
+
+			<div class="container-fluid ">
+				<nav>
+					<div class="nav nav-tabs justify-content-center container" id="nav-tab" role="tablist">
+						<button class="nav-link active" id="nav-home-tab1" data-bs-toggle="tab"
+							data-bs-target="#nav-home1" type="button" role="tab" aria-controls="nav-car"
+							aria-selected="true">CARS</button>
+						<button class="nav-link" id="nav-profile-tab1" data-bs-toggle="tab"
+							data-bs-target="#nav-profile1" type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">CROSSOVER &
+							SUVS</button>
+						<button class="nav-link" id="nav-contact-tab1" data-bs-toggle="tab"
+							data-bs-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact"
+							aria-selected="false">MINIVAN &
+							TRUCKS</button>
+						<button class="nav-link" id="nav-enviroment-tab1" data-bs-toggle="tab"
+							data-bs-target="#nav-enviroment1" type="button" role="tab" aria-controls="nav-enviroment1"
+							aria-selected="false">ENVIROMENT</button>
+						<button class="nav-link" id="nav-contact1-tab2" data-bs-toggle="tab"
+							data-bs-target="#nav-future2" type="button" role="tab" aria-controls="nav-future"
+							aria-selected="false">FUTURE</button>
+					</div>
+				</nav>
+
+				<div class="tab-content " id="nav-tabContent">
+					<div class="tab-pane fade show active animate__animated animate__slideInLeft" id="nav-home1"
+						role="tabpanel" aria-labelledby="nav-home-tab1">
+						<div class="owl-carousel owl-theme car-carousel">
+							<div class="tabCar">
+								<div class="tabCar-tag">OFFER 1</div>
+								<img class="d-none d-lg-block" src="./IMG/img/slider-6.jpg" alt="" srcset="">
+								<img class="d-block d-lg-none" src="./IMG/img/slider-1-xs.jpg" alt="" srcset="">
+								<div class="tabcar-Content">
+									<div class="position">
+										CARS
+										<span>1/8</span>
+
+									</div>
+									<div class="line-zone text-center">
+										<hr class="line1">
+										<div class="d-inline year">2022</div>
+										<h1>ACCORD</h1>
+
+									</div>
+									<P >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nesciunt
+										corporis doloremque modi doloribus est porro similique odit reprehenderit!</P>
+									<div class="product-info d-flex">
+										<div class="price">
+											$26,120
+											<p>STARTING MSRP</p>
+										</div>
+										<div class="info">
+											30/38
+											<p>CITY/HWY RATING</p>
+										</div>
+									</div>
+									<div class="btn-zone d-flex justify-content-around">
+										<button class="btn btn-red">EXPLORE</button>
+										<button class="btn btn-black">BUILD</button>
+									</div>
+								</div>
+							</div>
+							<div class="tabCar">
+								<div class="tabCar-tag">OFFER 2</div>
+								<img class="d-none d-lg-block" src="./IMG/img/slider-5.jpg" alt="" srcset="">
+								<img class="d-block d-lg-none" src="./IMG/img/slider-2-xs.jpg" alt="" srcset="">
+
+								<div class="tabcar-Content">
+									<div class="position">
+										CARS
+										<span>1/8</span>
+
+									</div>
+									<div class="line-zone text-center">
+										<hr class="line1">
+										<div class="d-inline year">2022</div>
+										<h1>ACCORD</h1>
+
+									</div>
+									<P >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nesciunt
+										corporis doloremque modi doloribus est porro similique odit reprehenderit!</P>
+									<div class="product-info d-flex">
+										<div class="price">
+											$26,120
+											<p>STARTING MSRP</p>
+										</div>
+										<div class="info">
+											30/38
+											<p>CITY/HWY RATING</p>
+										</div>
+									</div>
+									<div class="btn-zone d-flex justify-content-around">
+										<button class="btn btn-red">EXPLORE</button>
+										<button class="btn btn-black">BUILD</button>
+									</div>
+								</div>
+							</div>
+							<div class="tabCar">
+								<div class="tabCar-tag">OFFER 4</div>
+								<img class="d-none d-lg-block" src="./IMG/img/slider-7.jpg" alt="" srcset="">
+								<img class="d-block d-lg-none" src="./IMG/img/slider-3-xs.jpg" alt="" srcset="">
+
+								<div class="tabcar-Content">
+									<div class="position">
+										CARS
+										<span>1/8</span>
+
+									</div>
+									<div class="line-zone text-center">
+										<hr class="line1">
+										<div class="d-inline year">2022</div>
+										<h1>ACCORD</h1>
+
+									</div>
+									<P class="d-none d-xl-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nesciunt
+										corporis doloremque modi doloribus est porro similique odit reprehenderit!</P>
+									<div class="product-info d-flex">
+										<div class="price">
+											$26,120
+											<p>STARTING MSRP</p>
+										</div>
+										<div class="info">
+											30/38
+											<p>CITY/HWY RATING</p>
+										</div>
+									</div>
+									<div class="btn-zone d-flex justify-content-around">
+										<button class="btn btn-red">EXPLORE</button>
+										<button class="btn btn-black">BUILD</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade animate__animated animate__slideInRight" id="nav-profile1" role="tabpanel"
+						aria-labelledby="nav-profile-tab1">
+						<div class="owl-carousel owl-theme car-carousel">
+							<div class="tabCar">
+								<div class="tabCar-tag">OFFER 1</div>
+								<img class="d-none d-lg-block" src="./IMG/img/slider-4.jpg" alt="" srcset="">
+								<img class="d-block d-lg-none" src="./IMG/img/slider-3-xs.jpg" alt="" srcset="">
+
+								<div class="tabcar-Content">
+									<div class="position">
+										CARS
+										<span>1/8</span>
+
+									</div>
+									<div class="line-zone text-center">
+										<hr class="line1">
+										<div class="d-inline year">2022</div>
+										<h1>ACCORD</h1>
+
+									</div>
+									<P >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nesciunt
+										corporis doloremque modi doloribus est porro similique odit reprehenderit!</P>
+									<div class="product-info d-flex">
+										<div class="price">
+											$26,120
+											<p>STARTING MSRP</p>
+										</div>
+										<div class="info">
+											30/38
+											<p>CITY/HWY RATING</p>
+										</div>
+									</div>
+									<div class="btn-zone d-flex justify-content-around">
+										<button class="btn btn-red">EXPLORE</button>
+										<button class="btn btn-black">BUILD</button>
+									</div>
+								</div>
+							</div>
+							<div class="tabCar">
+								<div class="tabCar-tag">OFFER 2</div>
+								<img class="d-none d-lg-block" src="./IMG/img/slider-3.jpg" alt="" srcset="">
+								<img class="d-block d-lg-none" src="./IMG/img/slider-4-xs.jpg" alt="" srcset="">
+
+								<div class="tabcar-Content">
+									<div class="position">
+										CARS
+										<span>1/8</span>
+
+									</div>
+									<div class="line-zone text-center">
+										<hr class="line1">
+										<div class="d-inline year">2022</div>
+										<h1>ACCORD</h1>
+
+									</div>
+									<P >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nesciunt
+										corporis doloremque modi doloribus est porro similique odit reprehenderit!</P>
+									<div class="product-info d-flex">
+										<div class="price">
+											$26,120
+											<p>STARTING MSRP</p>
+										</div>
+										<div class="info">
+											30/38
+											<p>CITY/HWY RATING</p>
+										</div>
+									</div>
+									<div class="btn-zone d-flex justify-content-around">
+										<button class="btn btn-red">EXPLORE</button>
+										<button class="btn btn-black">BUILD</button>
+									</div>
+								</div>
+							</div>
+							<div class="tabCar">
+								<div class="tabCar-tag">OFFER 4</div>
+								<img class="d-none d-lg-block" src="./IMG/img/slider-2.jpg" alt="" srcset="">
+								<img class="d-block d-lg-none" src="./IMG/img/slider-5-xs.jpg" alt="" srcset="">
+
+								<div class="tabcar-Content">
+									<div class="position">
+										CARS
+										<span>1/8</span>
+
+									</div>
+									<div class="line-zone text-center">
+										<hr class="line1">
+										<div class="d-inline year">2022</div>
+										<h1>ACCORD</h1>
+
+									</div>
+									<P >Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nesciunt
+										corporis doloremque modi doloribus est porro similique odit reprehenderit!</P>
+									<div class="product-info d-flex">
+										<div class="price">
+											$26,120
+											<p>STARTING MSRP</p>
+										</div>
+										<div class="info">
+											30/38
+											<p>CITY/HWY RATING</p>
+										</div>
+									</div>
+									<div class="btn-zone d-flex justify-content-around">
+										<button class="btn btn-red">EXPLORE</button>
+										<button class="btn btn-black">BUILD</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab1">3
+					</div>
+					<div class="tab-pane fade" id="nav-enviroment1" role="tabpanel"
+						aria-labelledby="nav-enviroment-tab1">4
+					</div>
+					<div class="tab-pane fade" id="nav-future2" role="tabpanel" aria-labelledby="nav-contact1-tab2">
+						Future
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- Support -->
+	<div class="support">
+		<div class="mysupport">
+			<div class="container">
+				<div class="row gx-5 gy-5 ">
+					<div class="col-lg-3 col-md-6 col-12  text-center">
+						<div class="sp-item">
+							<i class="fa fa-wrench"></i>
+							<h1>Build and price</h1>
+							<button class="btn btn-blue">GO</button>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12  text-center">
+						<div class="sp-item">
+							<i class="fa fa-tag"></i>
+							<h1>Build and price</h1>
+							<button class="btn btn-blue">GO</button>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12  text-center">
+						<div class="sp-item">
+							<i class="fab fa-searchengin"></i>
+							<h1>Build and price</h1>
+							<button class="btn btn-blue">GO</button>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12  text-center">
+						<div class="sp-item">
+							<i class="fa fa-calculator"></i>
+							<h1>Build and price</h1>
+							<button class="btn btn-blue">GO</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- Guide -->
+	<div class="guide">
+		<div class="myGuide">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 ">
+					<div class="left text-center">
+						<img src="./IMG/img/xe-3.png" alt="">
+						<div class="left-content">
+							<button class="btn btn-blue">Shop Certified</button>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, provident?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 ">
+					<div class="right text-center">
+						<img src="./IMG/img/xe-1.png" alt="">
+						<h1>How-to Video and Guide</h1>
+						<p>For normal user, please Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+							ullam!</p>
+						<button class="btn btn-blue">Go</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Discover -->
+	<div class="discover">
+		<div class="myDiscover text-center">
+			<h1>Discover Honda</h1>
+			<p>Explore the world of Honda though our latest news, events and video.</p>
+			<div class="container">
+				<div class="row gy-5">
+					<div class="col-sm-6 col-lg-4  col-12">
+						<div class="item">
+							<img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Homepage/Discover-Honda/Tout-As/2021-cars-dot-com-accolade/cars_accolade_Homepage-Discover-ToutA.jpg?w=550&hash=440BC2AF43A99BF225EBAE60287D61A3D8F6EB10"
+								alt="" srcset="">
+							<h1>The Civic is the 2022 North American Car of the Year</h1>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore doloribus
+								praesentium quam eum nesciunt.</P>
+							<button class="btn btn-blue">LEARN MORE</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4  col-12 ">
+						<div class="item">
+							<img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/Awards/2022-NACOTY/Discover-Honda/Civic-Sedan-Homepage-Discover-Tout-P2-2X.jpg?w=768&hash=3563D6312DF9F3F57D226B3FB1920B11D356E801"
+								alt="" srcset="">
+							<h1>The Civic is the 2022 North American Car of the Year</h1>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore doloribus
+								praesentium quam eum nesciunt.</P>
+							<button class="btn btn-blue">LEARN MORE</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4  col-12 ">
+						<div class="item">
+							<img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Promos/2021/Project-Courage/Discover-Honda/Project-Courage-Homepage-Discover-Tout.jpg?w=768&hash=2E3B441345CB8CFD9854755FE7B8135C755A8E45"
+								alt="" srcset="">
+							<h1>The Civic is the 2022 North American Car of the Year</h1>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore doloribus
+								praesentium quam eum nesciunt.</P>
+							<button class="btn btn-blue">LEARN MORE</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4  col-12 ">
+						<div class="item">
+							<img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Homepage/Discover-Honda/Tout-As/2021-KBB-Web-Promo/2021-KBB-Discover-Homepage-ToutA-2x.jpg?w=768&hash=CC284BBFBDEF4E7AC04A5E3F24B8152A9863F70D"
+								alt="" srcset="">
+							<h1>The Civic is the 2022 North American Car of the Year</h1>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore doloribus
+								praesentium quam eum nesciunt.</P>
+							<button class="btn btn-blue">LEARN MORE</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4  col-12 ">
+						<div class="item">
+							<img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2022/Passport/non-VLP/Discover/MY22-Passport-non-VLP-discover-2x.jpg?w=768&hash=98EA444C0DFDD6225A996303667D200FE379A010"
+								alt="" srcset="">
+							<h1>The Civic is the 2022 North American Car of the Year</h1>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore doloribus
+								praesentium quam eum nesciunt.</P>
+							<button class="btn btn-blue">LEARN MORE</button>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4  col-12 ">
+						<div class="item">
+							<img src="https://automobiles.honda.com/-/media/Honda-Automobiles/Homepage/Discover-Honda/Tout-As/shop-discover-sensing-550x310.jpg?w=768&hash=02BB74EB8456ACC7D91C86AA455DE9750B82AAB8"
+								alt="" srcset="">
+							<h1>The Civic is the 2022 North American Car of the Year</h1>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore doloribus
+								praesentium quam eum nesciunt.</P>
+							<button class="btn btn-blue">LEARN MORE</button>
+						</div>
+					</div>
+
+				</div>
+				<button class="btn btn-red mt-4">MORE NEWS AND EVENTS</button>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="myFooter">
+			<hr class="line">
+			<img src="./IMG/honda-logo-11540236617dtkc4wercc.png" alt="">
+			<!-- Contact -->
+			<div class="contact">
+				<div class="row align-items-center">
+					<div class="col-lg-4 col-sm-6  ">
+						<div class="contact-icon text-start">
+							<i class="fab fa-facebook"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin"></i>
+							<i class="fab fa-pinterest"></i>
+							<i class="fab fa-snapchat"></i>
+							<i class="fab fa-youtube"></i>
+
+						</div>
+					</div>
+					<div class="col-lg-4 d-none d-lg-block ">
+						<div class="contact-search ">
+							<div class="search">
+								<input type="text" placeholder="Search for anything Honda">
+								<span><i class="fa fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 ">
+						<div class="contact-right text-end">
+							<p>Receive the latest new and exclusive update</p>
+							<button class="btn btn-black">STAY INFORMED</button>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="col-12 d-flex d-lg-none mt-4 justify-content-center">
+					<div class="contact-search ">
+						<div class="search">
+							<input type="text" placeholder="Search for anything Honda">
+							<span><i class="fa fa-search"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Category -->
+			<div class="category">
+				<div class="mycategory ">
+					<div class="row row-cols-lg-5 row-cols-2 ">
+						<div class="col">
+							<div class="item-list">
+								<h1>Vehicles</h1>
+								<ul class="d-none d-lg-block">
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									<li><a href="">Clarity models</a></li>
+									<li><a href="">HRV Crossover</a></li>
+									<li><a href="">CRV Crossover</a></li>
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									<li><a href="">Clarity models</a></li>
+									<li><a href="">HRV Crossover</a></li>
+									<li><a href="">CRV Crossover</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="item-list">
+								<h1>Shopping Tools</h1>
+								<ul class="d-none d-lg-block">
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									<li><a href="">Clarity models</a></li>
+									<li><a href="">HRV Crossover</a></li>
+									<li><a href="">CRV Crossover</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="item-list">
+								<h1>Discover Mode</h1>
+								<ul class="d-none d-lg-block">
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									<li><a href="">Clarity models</a></li>
+									<li><a href="">HRV Crossover</a></li>
+									<li><a href="">CRV Crossover</a></li>
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									<li><a href="">Clarity models</a></li>
+									<li><a href="">HRV Crossover</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="item-list">
+								<h1>Helper and Support</h1>
+								<ul class="d-none d-lg-block">
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									<li><a href="">Clarity models</a></li>
+									<li><a href="">HRV Crossover</a></li>
+									<li><a href="">CRV Crossover</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="item-list">
+								<h1>Owners</h1>
+								<ul class="d-none d-lg-block">
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									<li><a href="">Clarity models</a></li>
+									<li><a href="">HRV Crossover</a></li>
+									<li><a href="">CRV Crossover</a></li>
+									<li><a href="">Civic models</a></li>
+									<li><a href="">Insight hybrid</a></li>
+									<li><a href="">Acord models</a></li>
+									
+								</ul>
+							</div>
+						</div>
+						
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- Brand -->
+		<div class="brand">
+			<div class="copyRight d-flex">
+				<div class="left">
+					<p>©2022 American Honda Motor Co., Inc. All information contained herein applies to U.S. vehicles only. For non-U.S.-distributor information go to world.honda.com.</p>
+				</div>
+				<div class="right d-flex">
+					<span>Privacy Policy</span>
+					<span>Prop 65 info</span>
+					<span>Vehicle data privacy</span>
+					<span>Control Policy</span>
+					<span>Do nor sell my content</span>
+					<span>Site Map</span>
+				</div>
+			</div>
+			<div class="mybrand">
+				<div class="logo">
+
+					<img src="./IMG/img/footer-logo-1.jpg" alt="" srcset="">
+				</div>
+				<div class="logo">
+					<img src="./IMG/img/footer-logo-2.jpg" alt="" srcset="">
+				</div>
+				<div class="logo">
+					<img src="./IMG/img/footer-logo-3.jpg" alt="" srcset="">
+				</div>
+				<div class="logo">
+					<img src="./IMG/img/footer-logo-4.jpg" alt="" srcset="">
+				</div>
+				<div class="logo">
+					<img src="./IMG/img/footer-logo-5.jpg" alt="" srcset="">
+				</div>
+				<div class="logo">
+					<img src="./IMG/img/footer-logo-6.jpg" alt="" srcset="">
+				</div>
+				<div class="logo">
+					<img src="./IMG/img/footer-logo-1.jpg" alt="" srcset="">
+				</div>
+			</div>
+			<p class="last">We use cookies to improve your user experience on this site and show you personalized adverstising</p>
+		</div>
+	</footer>
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+		crossorigin="anonymous"></script>
+	<!-- bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+		crossorigin="anonymous"></script>
+	<!-- own carousel -->
+	<script src="./JS/owl.carousel.min.js"></script>
+	<script src="./JS/main.js"></script>
+	<script>
+		$('.car-carousel').owlCarousel({
+			loop: true,
+			margin: 0,
+			nav: true,
+			dots: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 1
+				}
+			}
+		})
+
+	</script>
+</body>
+
+</html>

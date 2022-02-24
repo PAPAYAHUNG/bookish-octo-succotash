@@ -1,0 +1,30 @@
+.discover {
+  .myDiscover {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: $fs-2;
+    }
+    .item {
+        padding-bottom: 20px;
+        box-shadow: 1px 2px 3px gray ;
+      img {
+        width: 100%;
+      }
+      h1 {
+          padding-top: 10px;
+          min-height: 80px;
+        @include styleText($color-white, $fs-3, $fw-2);
+      }
+      p{
+          min-height: 100px;
+      }
+      &:hover{
+          transform: translateY(2px);
+          cursor: pointer;
+      }
+      
+    }
+  }
+}
