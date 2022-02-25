@@ -45,6 +45,11 @@
     }
   }
   .myheader__right {
+    .nav-hidden{
+      display: flex;
+      flex-direction: row;
+    }
+    display: flex;
     margin-left: auto;
     li {
       text-decoration: none;
@@ -53,6 +58,7 @@
     .navbar-nav {
       .nav-link {
         @include styleText($color-white, $fs-1, $fw-2);
+        padding-left: 15px;
       }
     }
     a {
@@ -78,6 +84,16 @@
 }
 
 //------------------RESPONSIVE----------------
-
+@media screen and (max-width:768px) {
+  
+    .navbar-nav{
+      .nav-item{
+        .nav-link{
+          padding-left: 20px;
+        }
+      }
+    }
+  
+}
 
 

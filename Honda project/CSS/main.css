@@ -99,7 +99,20 @@ body {
 }
 
 .myheader .myheader__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
+}
+
+.myheader .myheader__right .nav-hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .myheader .myheader__right li {
@@ -111,6 +124,7 @@ body {
   color: white;
   font-size: 1.4rem;
   font-weight: 600;
+  padding-left: 15px;
 }
 
 .myheader .myheader__right .nav-item {
@@ -137,6 +151,12 @@ body {
 .myheader .myheader__right .language {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    padding-left: 20px;
+  }
 }
 
 footer {
@@ -261,6 +281,28 @@ footer .myFooter .mycategory .item-list ul li a {
   text-decoration: none;
   font-size: 1.4rem;
   color: #00446b;
+}
+
+.back-to-top {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  background-color: rgba(13, 75, 146, 0.568);
+  border-radius: 10px;
+  z-index: 100;
+  right: 0;
+  bottom: 20%;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+  background-color: rgba(13, 75, 146, 0.883);
+}
+
+.back-to-top i {
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -835,6 +877,8 @@ footer .myFooter .mycategory .item-list ul li a {
     width: 60%;
     margin: auto;
     background-color: #00446b;
+    -webkit-transition: all 2s;
+    transition: all 2s;
   }
   .ourVehicle .myOurVehicle .nav-tabs .nav-link {
     color: white;
@@ -866,6 +910,7 @@ footer .myFooter .mycategory .item-list ul li a {
             flex-direction: column;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    display: none;
   }
   .ourVehicle .myOurVehicle .title_zone {
     position: relative;
@@ -889,6 +934,20 @@ footer .myFooter .mycategory .item-list ul li a {
     color: #57050c;
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
+  }
+  .ourVehicle .myOurVehicle .title_zone .close-nav {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .ourVehicle .myOurVehicle .title_zone .open-nav {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .ourVehicle .myOurVehicle .title_zone .open-nav.transform-rotate i {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 

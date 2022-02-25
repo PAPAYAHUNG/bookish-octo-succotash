@@ -1,5 +1,32 @@
+//For hidden tab button header
+let isShift = false
+$('.navbar-toggler1').click(function () {
+    // console.log($('.navbar-toggler1'))
+    // console.log($('.nav-hidden'))
+    // console.log($('.nav-hidden').parent().parent())
+    if (isShift == false) {
+        console.log(isShift)
+
+        $('.nav-hidden').insertAfter($('.nav-hidden').parent().parent())
+        $('.nav-hidden').removeClass('d-none')
+        console.log($('.nav-hidden').siblings().children('.myheader__right').children('.dealers'))
+        isShift = true
+    }
+    else {
+        console.log(isShift)
+        console.log($('.nav-hidden').siblings().children('.myheader__right').children('.dealers'))
+
+        $('.nav-hidden').addClass('d-none')
+        $('.nav-hidden').insertAfter($('.nav-hidden').siblings().children('.myheader__right').children('.dealers'))
+        isShift = false
+    }
+}
+)
+// /$('.nav-hidden').parent().parent()
 
 
+
+//------------For switching header--------------
 let aTabs = document.querySelectorAll(".header_btn");
 let shopping = document.querySelector('.shopping')
 let vehicle = document.querySelector('.vehicle')
@@ -232,32 +259,68 @@ btnShown.click(function () {
 btnOff.click(function () {
     $(this).addClass('d-none')
     $(this).siblings('.btn-plus').removeClass('d-none')
+    $(this).siblings('.btn-plus').addClass('animate__animated animate__slideInDown')
     $(this).parent().siblings().addClass('d-none')
 })
 
 //---------------------JS for button close of Our Vehicle tabs -----------
+
+// STYLE 1
+// $('.open-nav').click(function () {
+//     console.log($(this))
+//     $('.ul-small-screen').removeClass('d-none ')
+//     $('.ul-small-screen').addClass('animate__slideInDown')
+//     $('.ul-small-screen').removeClass('animate__slideInUp')
+//     $(this).addClass('d-none')
+//     $(this).siblings('.close-nav').removeClass('d-none')
+// })
+// let typeCar = $('.btn-choose')
+// console.log(typeCar)
+// typeCar.click(function () {
+//     let typename = $(this).html()
+//     $('.current-select').html(typename)
+//     typeCar.removeClass('d-none')
+//     $(this).addClass('d-none')
+// })
+// $('.close-nav').click(function () {
+//     $('.ul-small-screen').addClass('animate__slideInUp')
+//     setTimeout(function(){
+//         $('.ul-small-screen').addClass('d-none')
+//     }, 500);
+//     $('.ul-small-screen').removeClass('animate__slideInDown')
+//     $(this).addClass('d-none')
+//     $(this).siblings('.open-nav').removeClass('d-none')
+// })
+
+
+
+// ---------------STYLE 2-------------
 $('.open-nav').click(function () {
     console.log($(this))
-    $('.ul-small-screen').removeClass('d-none animate__animated animate__slideInDown')
-    // $('.ul-small-screen').slideToggle()
-
-    $(this).addClass('d-none')
-    $(this).siblings('.close-nav').removeClass('d-none')
+    $('.ul-small-screen').slideToggle()
+    if ($(this).hasClass('transform-rotate')) {
+        $(this).removeClass('transform-rotate')
+    }
+    else {
+        $('.ul-small-screen').slideUp()
+        $(this).addClass('transform-rotate')
+    }
 })
 let typeCar = $('.btn-choose')
-console.log(typeCar)
 
 typeCar.click(function () {
     let typename = $(this).html()
     $('.current-select').html(typename)
     typeCar.removeClass('d-none')
     $(this).addClass('d-none')
-
 })
-$('.close-nav').click(function () {
-    $('.ul-small-screen').addClass('d-none')
-    $(this).addClass('d-none')
-    $(this).siblings('.open-nav').removeClass('d-none')
 
-
+//----------------Slide to View Button -----------------
+// console.log(document.querySelector('.back-to-top'))
+// document.querySelector('.back-to-top').onclick(function(){
+//     html.scrollIntoView()
+// })
+$('.back-to-top').click(function () {
+    // $('html, body').scrollTop(0)
+    $('html, body').animate({ scrollTop: 0 }, 1000)
 })

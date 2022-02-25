@@ -92,6 +92,24 @@ background-color: $color-blue-light;
     
     }
 }
+.back-to-top{
+  position: fixed;
+  display: flex;
+  padding: 20px;
+  background-color: rgba(13, 75, 146, 0.568);
+  border-radius: 10px;
+  z-index: 100;
+  right: 0;
+  bottom: 20%;
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(13, 75, 146, 0.883) ;
+  }
+  i{
+    font-size: 3rem;
+   
+  }
+}
 ///-----------RESPONSIVE---------------------
 @media screen and (max-width: 992px) {
   footer{

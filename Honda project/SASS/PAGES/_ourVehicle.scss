@@ -80,7 +80,7 @@
       .tabCar {
         text-align: center;
         position: relative;
-        
+
         .tabcar-Content {
           position: absolute;
           top: 35%;
@@ -126,58 +126,70 @@
 @media screen and (max-width: 992px) {
   .ourVehicle {
     .myOurVehicle {
-      .nav_column{
+      .nav_column {
         width: 60%;
         margin: auto;
-        background-color:$color-blue-light ;
-
+        background-color: $color-blue-light;
+        transition: all 2s;
       }
       .nav-tabs {
-            .nav-link {
-              @include styleText($color-white, $fs-2, $fw-2);
-              padding: 10px 20px;
-              width: 100%;
-            }
-            .nav-link.active {
-              position: relative;
-              &::before {
-                position: absolute;
-                content: "";
-                display: block;
-                top: 100%;
-                z-index: 5000;
-                border: 20px solid;
-                border-color: transparent transparent transparent transparent;
-              }
-            }
+        .nav-link {
+          @include styleText($color-white, $fs-2, $fw-2);
+          padding: 10px 20px;
+          width: 100%;
+        }
+        .nav-link.active {
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 100%;
+            z-index: 5000;
+            border: 20px solid;
+            border-color: transparent transparent transparent transparent;
           }
+        }
+      }
 
-      .ul-small-screen{
+      .ul-small-screen {
         padding: 20px 0 0 0;
         display: flex;
         flex-direction: column;
         transition: 0.5s;
+        display: none;
       }
-      .title_zone{
+      .title_zone {
         position: relative;
         top: 15px;
         z-index: 100;
         background-color: $color-blue-light;
         padding: 20px;
         border-bottom: 1px solid rgb(102, 97, 97);
-        h2:last-child{
+        h2:last-child {
           @include styleText($color-white, $fs-3, $fw-2);
           text-align: left;
-
         }
-        span{
-          i{
+        span {
+          i {
             font-size: 3rem;
           }
-          &:hover{
+          &:hover {
             cursor: pointer;
             color: $color-red;
             transform: translateY(2px);
+          }
+        }
+        .close-nav{
+          transition: all 0.5s;
+        }
+        .open-nav{
+          transition: all 0.5s;
+          &.transform-rotate{
+            i{
+              transform: rotate(180deg);
+              transition: all 0.5s;
+            }
           }
         }
       }
