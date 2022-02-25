@@ -138,8 +138,8 @@ aTabs.forEach(function (item) {
                                 // setTimeout(function(){
                                 //     pane.classList.remove('is_shown')
                                 // },300)
-                                    pane.classList.remove('is_shown')
-                                
+                                pane.classList.remove('is_shown')
+
                                 console.log(pane.classList.contains("is_shown"))
 
                             }
@@ -157,7 +157,7 @@ aTabs.forEach(function (item) {
 
                 }
                 else {
-                    e.target.classList.add('active','animate__animated', 'animate__pulse' )
+                    e.target.classList.add('active', 'animate__animated', 'animate__pulse')
                     paneList.forEach(function (pane) {
                         let idPane = pane.getAttribute('data-index')
                         if (idPane === dataIndex) {
@@ -185,7 +185,7 @@ aTabs.forEach(function (item) {
                 console.log(dataIndex)
                 console.log(dataId)
                 $('.header_btn').removeClass('active')
-                e.target.classList.add('active','animate__animated', 'animate__pulse' )
+                e.target.classList.add('active', 'animate__animated', 'animate__pulse')
 
                 paneList.forEach(function (pane) {
                     let idPane = pane.getAttribute('data-index')
@@ -217,20 +217,47 @@ aTabs.forEach(function (item) {
 let btnShown = $('.btn-plus')
 let ulList = $('.item-list > ul')
 let btnOff = $('.btn-minus')
-console.log(btnOff)
+// console.log(btnOff)
 // console.log(ulList)
-btnShown.click(function(){
-    
+btnShown.click(function () {
+
     // ulList.addClass('d-none')
     console.log($(this).parent().siblings())
     $(this).toggleClass('d-none')
     $(this).siblings('.btn-minus').removeClass('d-none')
     $(this).parent().siblings().toggleClass('d-none')
     // console.log($(this).siblings())
-    
+
 })
-btnOff.click(function(){
+btnOff.click(function () {
     $(this).addClass('d-none')
     $(this).siblings('.btn-plus').removeClass('d-none')
     $(this).parent().siblings().addClass('d-none')
+})
+
+//---------------------JS for button close of Our Vehicle tabs -----------
+$('.open-nav').click(function () {
+    console.log($(this))
+    $('.ul-small-screen').removeClass('d-none animate__animated animate__slideInDown')
+    // $('.ul-small-screen').slideToggle()
+
+    $(this).addClass('d-none')
+    $(this).siblings('.close-nav').removeClass('d-none')
+})
+let typeCar = $('.btn-choose')
+console.log(typeCar)
+
+typeCar.click(function () {
+    let typename = $(this).html()
+    $('.current-select').html(typename)
+    typeCar.removeClass('d-none')
+    $(this).addClass('d-none')
+
+})
+$('.close-nav').click(function () {
+    $('.ul-small-screen').addClass('d-none')
+    $(this).addClass('d-none')
+    $(this).siblings('.open-nav').removeClass('d-none')
+
+
 })

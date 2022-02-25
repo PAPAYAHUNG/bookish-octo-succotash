@@ -83,7 +83,7 @@
         
         .tabcar-Content {
           position: absolute;
-          top: 381px;
+          top: 35%;
           left: 50%;
           transform: translateX(-50%);
           padding: 20px;
@@ -116,6 +116,68 @@
             .info {
               font-size: $fs-3;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ourVehicle {
+    .myOurVehicle {
+      .nav_column{
+        width: 60%;
+        margin: auto;
+        background-color:$color-blue-light ;
+
+      }
+      .nav-tabs {
+            .nav-link {
+              @include styleText($color-white, $fs-2, $fw-2);
+              padding: 10px 20px;
+              width: 100%;
+            }
+            .nav-link.active {
+              position: relative;
+              &::before {
+                position: absolute;
+                content: "";
+                display: block;
+                top: 100%;
+                z-index: 5000;
+                border: 20px solid;
+                border-color: transparent transparent transparent transparent;
+              }
+            }
+          }
+
+      .ul-small-screen{
+        padding: 20px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+      }
+      .title_zone{
+        position: relative;
+        top: 15px;
+        z-index: 100;
+        background-color: $color-blue-light;
+        padding: 20px;
+        border-bottom: 1px solid rgb(102, 97, 97);
+        h2:last-child{
+          @include styleText($color-white, $fs-3, $fw-2);
+          text-align: left;
+
+        }
+        span{
+          i{
+            font-size: 3rem;
+          }
+          &:hover{
+            cursor: pointer;
+            color: $color-red;
+            transform: translateY(2px);
           }
         }
       }
