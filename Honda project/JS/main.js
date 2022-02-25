@@ -203,3 +203,28 @@ aTabs.forEach(function (item) {
         }
     })
 })
+
+//--------------------------Button of Category -----------------
+// let btnShown = document.querySelectorAll('.btn-plus')
+
+// btnShown.forEach(function(btn){
+//     btn.addEventListener('click',function(e){
+//         console.log(e.currentTarget.parentElement)
+//         // e.target.classList.remove('d-none')
+//     })
+// })
+
+let btnShown = $('.btn-plus')
+let ulList = $('.item-list > ul')
+console.log(btnShown)
+// console.log(ulList)
+btnShown.click(function(){
+    
+    // ulList.addClass('d-none')
+    console.log($(this).parent().siblings())
+    $(this).toggleClass('d-none')
+    $(this).siblings('.btn-minus').toggleClass('d-none')
+    $(this).parent().siblings().toggleClass('d-none')
+    // console.log($(this).siblings())
+    
+})
