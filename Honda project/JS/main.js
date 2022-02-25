@@ -216,15 +216,21 @@ aTabs.forEach(function (item) {
 
 let btnShown = $('.btn-plus')
 let ulList = $('.item-list > ul')
-console.log(btnShown)
+let btnOff = $('.btn-minus')
+console.log(btnOff)
 // console.log(ulList)
 btnShown.click(function(){
     
     // ulList.addClass('d-none')
     console.log($(this).parent().siblings())
     $(this).toggleClass('d-none')
-    $(this).siblings('.btn-minus').toggleClass('d-none')
+    $(this).siblings('.btn-minus').removeClass('d-none')
     $(this).parent().siblings().toggleClass('d-none')
     // console.log($(this).siblings())
     
+})
+btnOff.click(function(){
+    $(this).addClass('d-none')
+    $(this).siblings('.btn-plus').removeClass('d-none')
+    $(this).parent().siblings().addClass('d-none')
 })
