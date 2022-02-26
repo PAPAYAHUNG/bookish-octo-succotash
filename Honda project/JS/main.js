@@ -22,7 +22,6 @@ $('.navbar-toggler1').click(function () {
     }
 }
 )
-// /$('.nav-hidden').parent().parent()
 
 
 
@@ -316,11 +315,18 @@ typeCar.click(function () {
 })
 
 //----------------Slide to View Button -----------------
-// console.log(document.querySelector('.back-to-top'))
-// document.querySelector('.back-to-top').onclick(function(){
-//     html.scrollIntoView()
-// })
+// METHOD 1
 $('.back-to-top').click(function () {
-    // $('html, body').scrollTop(0)
-    $('html, body').animate({ scrollTop: 0 }, 1000)
+    $('html, body').animate({ scrollTop: 0 }, 500)
 })
+
+//METHOD 2
+// $('.back-to-top').click(function(){
+//     console.log($('.back-to-top'))
+//     $('#vehicle-list').mCustomScrollbar(
+//         "scrollTo","#top-zone1",{scrollEasing:'easeOut'}
+//     );
+// })
+
+//METHOD 3
+//Use a href#id.

@@ -339,6 +339,13 @@ footer .myFooter .mycategory .item-list ul li a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  footer .myFooter .contact {
+    padding: 30px 0;
+    border-bottom: unset;
+  }
+}
+
 .mycarousel .carousel-inner .carousel-item img {
   -o-object-position: center;
      object-position: center;
