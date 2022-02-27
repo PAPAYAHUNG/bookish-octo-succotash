@@ -317,7 +317,10 @@ footer .myFooter .mycategory .item-list ul li a {
     border-top: 1px solid gray;
     text-align: left;
   }
-  footer .myFooter .mycategory .item-list h1 {
+  footer .myFooter .mycategory .item-list .title-x {
+    width: 100%;
+  }
+  footer .myFooter .mycategory .item-list .title-x h1 {
     color: #00446b;
     font-size: 1.6rem;
     font-weight: 600;

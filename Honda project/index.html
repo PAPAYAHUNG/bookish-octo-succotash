@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
 	<!-- Link malihu custom scrollbar -->
 	<link rel="stylesheet" href="./CSS/jquery.mCustomScrollbar.css" />
+	<!-- Link to WOW js -->
+	<link rel="stylesheet" href="./CSS/animate.css">
 	<!-- Main css -->
 	<link rel="stylesheet" href="./CSS/main.css">
 </head>
@@ -37,7 +39,7 @@
 	</div>
 	<!-- header -->
 	<header>
-		<div class="myheader animate__animated animate__rubberBand" >
+		<div class="myheader animate__animated animate__rubberBand">
 			<nav class="navbar ">
 				<a class="navbar-brand" href="#">
 					<!-- HONDA -->
@@ -328,7 +330,7 @@
 						</div>
 						<div class="row">
 							<div class="row title">
-								<div class="col-12" id="top-zone1">
+								<div class="col-12">
 									<hr size="2" class="line">
 									<div class="script text-center">
 										<h1 class="d-inline">
@@ -652,7 +654,7 @@
 	<section class="product">
 		<div class="my_product">
 			<div class="row">
-				<div class="col-lg-6 col-md-12 text-center left">
+				<div class="col-lg-6 col-md-12 text-center left wow slideInLeft">
 					<img src="./IMG/img/xe-1.png" alt="">
 					<div class="product-content">
 						<h1>Get ready for a whole new look</h1>
@@ -661,7 +663,7 @@
 				</div>
 
 
-				<div class="col-lg-6 col-md-12 text-center right">
+				<div class="col-lg-6 col-md-12 text-center right wow slideInRight">
 					<img src="./IMG/img/xe-4-hover.png" alt="">
 					<div class="product-content text-center">
 						<h1>The next generation type R is on its way</h1>
@@ -1022,7 +1024,7 @@
 	<section class="guide">
 		<div class="myGuide">
 			<div class="row">
-				<div class="col-lg-6 col-md-12 ">
+				<div class="col-lg-6 col-md-12 wow slideInLeft">
 					<div class="left text-center">
 						<img src="./IMG/img/xe-3.png" alt="">
 						<div class="left-content">
@@ -1031,7 +1033,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-12 ">
+				<div class="col-lg-6 col-md-12 wow slideInRight">
 					<div class="right text-center">
 						<img src="./IMG/img/xe-1.png" alt="">
 						<h1>How-to Video and Guide</h1>
@@ -1168,7 +1170,7 @@
 						<div class="col">
 							<div class="item-list">
 								<div class="d-flex align-items-center justify-content-between ">
-									<div>
+									<div class="title-x">
 										<h1>Vehicles</h1>
 
 									</div>
@@ -1197,7 +1199,7 @@
 						<div class="col">
 							<div class="item-list">
 								<div class="d-flex align-items-center justify-content-between ">
-									<div>
+									<div class="title-x">
 										<h1>Shopping Tools</h1>
 									</div>
 									<button class="btn-plus d-block d-lg-none"><i
@@ -1218,7 +1220,7 @@
 						<div class="col">
 							<div class="item-list">
 								<div class="d-flex align-items-center justify-content-between ">
-									<div>
+									<div class="title-x">
 										<h1>Discover Mode</h1>
 									</div>
 									<button class="btn-plus d-block d-lg-none"><i
@@ -1243,7 +1245,7 @@
 						<div class="col">
 							<div class="item-list">
 								<div class="d-flex align-items-center justify-content-between ">
-									<div>
+									<div class="title-x">
 										<h1>Helper and Support</h1>
 									</div>
 									<button class="btn-plus d-block d-lg-none"><i
@@ -1265,7 +1267,7 @@
 						<div class="col">
 							<div class="item-list">
 								<div class="d-flex align-items-center justify-content-between ">
-									<div>
+									<div class="title-x">
 										<h1>Owners</h1>
 									</div>
 									<button class="btn-plus d-block d-lg-none"><i
@@ -1381,14 +1383,10 @@
 	</script>
 	<!-- Malihu custom scroolbar -->
 	<script src="./JS/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- WOW JS -->
+	<script src="./JS/wow.min.js"></script>
 	<script>
-		
-			// $(window).on("load",function(){
-			// 	$("html, body").mCustomScrollbar(
-			// 		"scrollTo",0,{scrollEasing:'easeOut'}
-			// 	);
-			// });
-		
+		new WOW().init();
 	</script>
 	<!-- Main JS -->
 	<script src="./JS/main.js"></script>

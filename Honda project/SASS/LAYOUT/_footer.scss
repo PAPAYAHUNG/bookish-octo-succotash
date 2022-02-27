@@ -126,10 +126,14 @@ background-color: $color-blue-light;
              
               border-top: 1px solid gray;
                 text-align: left;
-              h1 {
-                @include styleText($color-blue-light, $fs-2, $fw-2);
-                padding: 10px 0;
-              }
+                 .title-x{
+                   width: 100%;
+                   h1 {
+                     @include styleText($color-blue-light, $fs-2, $fw-2);
+                     padding: 10px 0;
+                   }
+
+                 }
               ul{
                 padding: 0;
                   li {

@@ -231,36 +231,55 @@ aTabs.forEach(function (item) {
 })
 
 //--------------------------Button of Category -----------------
-// let btnShown = document.querySelectorAll('.btn-plus')
-
-// btnShown.forEach(function(btn){
-//     btn.addEventListener('click',function(e){
-//         console.log(e.currentTarget.parentElement)
-//         // e.target.classList.remove('d-none')
-//     })
-// })
 
 let btnShown = $('.btn-plus')
+let titleList = $('.title-x')
 let ulList = $('.item-list > ul')
 let btnOff = $('.btn-minus')
-// console.log(btnOff)
-// console.log(ulList)
-btnShown.click(function () {
+console.log(titleList)
 
-    // ulList.addClass('d-none')
-    console.log($(this).parent().siblings())
-    $(this).toggleClass('d-none')
-    $(this).siblings('.btn-minus').removeClass('d-none')
-    $(this).parent().siblings().toggleClass('d-none')
-    // console.log($(this).siblings())
+//METHOD 1
+// btnShown.click(function () {
 
+//     // ulList.addClass('d-none')
+//     console.log($(this).parent().siblings())
+//     $(this).toggleClass('d-none')
+//     $(this).siblings('.btn-minus').removeClass('d-none')
+//     $(this).parent().siblings().toggleClass('d-none')
+//     // console.log($(this).siblings())
+
+// })
+// btnOff.click(function () {
+//     $(this).addClass('d-none')
+//     $(this).siblings('.btn-plus').removeClass('d-none')
+//     $(this).siblings('.btn-plus').addClass('animate__animated animate__slideInDown')
+//     $(this).parent().siblings().addClass('d-none')
+// })
+//METHOD 2
+
+let isClicked = false
+titleList.click(function () {
+    if(isClicked == false){
+        console.log( $(this).children('.btn-plus'))
+        $(this).siblings('.btn-plus').addClass('d-none')
+        $(this).siblings('.btn-minus').removeClass('d-none')
+        $(this).parent().siblings().toggleClass('d-none')
+        // console.log($(this).siblings())
+        isClicked = true
+    }
+    else{
+        console.log( $(this).children('.btn-plus'))
+
+         $(this).siblings('.btn-minus').addClass('d-none')
+
+        $(this).siblings('.btn-plus').removeClass('d-none')
+        $(this).siblings('.btn-plus').addClass('animate__animated animate__slideInDown')
+        $(this).parent().siblings().addClass('d-none')
+        isClicked = false
+
+    }
 })
-btnOff.click(function () {
-    $(this).addClass('d-none')
-    $(this).siblings('.btn-plus').removeClass('d-none')
-    $(this).siblings('.btn-plus').addClass('animate__animated animate__slideInDown')
-    $(this).parent().siblings().addClass('d-none')
-})
+
 
 //---------------------JS for button close of Our Vehicle tabs -----------
 
